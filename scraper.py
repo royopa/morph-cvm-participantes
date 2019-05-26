@@ -7,7 +7,7 @@ import os
 os.environ['SCRAPERWIKI_DATABASE_NAME'] = 'sqlite:///data.sqlite'
 
 # # Read in a page
-for pk_partic in range(1, 990156):
+for pk_partic in range(200382, 201000):
     print(str(pk_partic), end=' ')
     url = 'http://cvmweb.cvm.gov.br/SWB/Sistemas/SCW/CPublica/DemContabeis/CPublicaDemContabeisFI.aspx?PK_PARTIC={}'
     pk_partic = str(pk_partic)
