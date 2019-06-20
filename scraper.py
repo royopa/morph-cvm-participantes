@@ -32,3 +32,6 @@ for pk_partic in range(100000, 200000):
 
     # Write out to the sqlite database using scraperwiki library
     scraperwiki.sqlite.save(unique_keys=['pk_partic'], data=data)
+
+# rename file
+os.rename('scraperwiki.sqlite', 'data.sqlite')
